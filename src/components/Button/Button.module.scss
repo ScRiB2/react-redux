@@ -1,0 +1,127 @@
+@import 'src/styles/constants';
+@import 'src/styles/_mixins';
+
+@mixin hover($color) {
+  @include transitionHover(background-color, $color);
+
+  &:disabled {
+    background-color: $color-black-200;
+    cursor: not-allowed;
+  }
+}
+
+.button {
+  padding: $grid-tiny $grid-small;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+// FIXME: sanitize colors
+.lightOrange {
+  background-color: $color-orange-100;
+  color: $color-orange;
+  &:focus,
+  &:active {
+    background-color: $color-orange-200;
+  }
+  @include hover($color-light-orange-hover);
+}
+
+.orange {
+  background-color: $color-orange;
+  &:focus,
+  &:active {
+    background-color: $color-orange-pressed;
+  }
+  @include hover($color-orange-hover);
+}
+
+.lightGreen {
+  background-color: $color-green-100;
+  color: $color-green;
+  &:focus,
+  &:active {
+    background-color: $color-green-pressed;
+  }
+  @include hover($color-green-200);
+}
+
+.green {
+  background-color: $color-green;
+  color: $color-black-text;
+  &:focus,
+  &:active {
+    background-color: $color-green-pressed;
+  }
+  @include hover($color-green-hover);
+}
+
+.greenClear {
+  background-color: $color-white;
+  color: $color-black-text;
+  &:focus,
+  &:active {
+    background-color: $color-green-100;
+  }
+  @include hover($color-green-200);
+}
+
+.red {
+  background-color: $color-red;
+  color: $color-white;
+  &:focus,
+  &:active {
+    background-color: $color-red-pressed;
+  }
+  @include hover($color-red-hover);
+}
+
+.redClear {
+  background-color: $color-white;
+  color: $color-black-text;
+  &:focus,
+  &:active {
+    background-color: $color-red-200;
+  }
+  @include hover($color-red-200);
+}
+
+.orangeClear {
+  background-color: $color-white;
+  color: $color-black-text;
+  &:focus,
+  &:active {
+    background-color: $color-orange-200;
+  }
+  @include hover($color-orange-200);
+}
+
+.orangeDark {
+  background-color: $color-orange-dark;
+  color: $color-white;
+  @include hover($color-orange-dark-hover);
+}
+
+.orangeDarkClear {
+  background-color: $color-white;
+  color: $color-black-text;
+  @include hover($color-orange-200);
+}
+
+.orangeDark {
+  background-color: $color-orange-dark;
+  color: $color-white;
+  @include hover($color-orange-dark-hover);
+}
+
+.orangeDarkClear {
+  background-color: $color-white;
+  color: $color-black-text;
+  @include hover($color-orange-dark-200);
+}
