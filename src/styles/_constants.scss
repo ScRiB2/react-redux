@@ -1,0 +1,124 @@
+// colors
+$color-sandy: #f7a627;
+$color-orange: #f58529;
+$color-orange-dark: #ea582e;
+$color-red: #e52d2f;
+$color-green: #00c993;
+$color-green-dark: #0ca3a3;
+$color-blue: #007fb5;
+$color-blue-dark: #286bb2;
+
+$color-black-text: #313131;
+$color-black-bg: #353535;
+$color-grey-text: #8e8e8e;
+$color-grey-light-text: #e0e0e0;
+$color-grey-decor: #ececec;
+$color-grey-bg: #f8f8f8;
+$color-white: #ffffff;
+
+$color-orange-button-default: #fef6f0;
+$color-orange-button-hover: #fdf3f0;
+
+$color-orange-100: rgba($color-orange, 0.07);
+$color-orange-200: rgba($color-orange, 0.15);
+$color-orange-300: rgba($color-orange, 0.4);
+$color-orange-400: rgba($color-orange, 0.6);
+$color-orange-500: rgba($color-orange, 0.8);
+$color-orange-600: rgba($color-orange, 0.86);
+$color-orange-700: rgba($color-orange, 0.93);
+
+$color-red-100: rgba($color-red, 0.07);
+$color-red-200: rgba($color-red, 0.15);
+$color-red-300: rgba($color-red, 0.4);
+$color-red-400: rgba($color-red, 0.6);
+$color-red-500: rgba($color-red, 0.8);
+$color-red-600: rgba($color-red, 0.86);
+$color-red-700: rgba($color-red, 0.93);
+
+$color-black-100: rgba($color-black-bg, 0.07);
+$color-black-200: rgba($color-black-bg, 0.15);
+$color-black-300: rgba($color-black-bg, 0.4);
+$color-black-400: rgba($color-black-bg, 0.6);
+$color-black-500: rgba($color-black-bg, 0.8);
+$color-black-600: rgba($color-black-bg, 0.86);
+$color-black-700: rgba($color-black-bg, 0.93);
+
+$color-green-100: rgba($color-green, 0.07);
+$color-green-200: rgba($color-green, 0.15);
+$color-green-300: rgba($color-green, 0.4);
+$color-green-400: rgba($color-green, 0.6);
+$color-green-500: rgba($color-green, 0.8);
+$color-green-600: rgba($color-green, 0.86);
+$color-green-700: rgba($color-green, 0.93);
+
+$color-flip-200: rgba($color-green-dark, 0.15);
+$color-flip-500: rgba($color-green-dark, 0.8);
+
+$color-black-text-200: rgba($color-black-text, 0.2);
+$color-white-modal-bg: rgba($color-white, 0.75);
+
+$color-green-hover: #00bb89;
+$color-green-pressed: #00ad7e;
+$color-red-hover: #d52a2c;
+$color-red-pressed: #c52728;
+$color-orange-hover: #e97d27;
+$color-orange-pressed: #dc7425;
+
+$color-orange-dark-hover: #df532c;
+$color-orange-dark-active: #d24e2a;
+$color-orange-dark-100: rgba($color-orange-dark, 0.07);
+$color-orange-dark-200: rgba($color-orange-dark, 0.15);
+$color-light-orange-hover: rgba($color-orange, 0.1);
+
+$shadow-color: rgba(0, 0, 0, 0.06);
+
+// grid
+$grid-tiny: 5px;
+$grid-small: 15px;
+$grid-base: 30px;
+$grid-base-2x: 60px;
+$grid-base-3x: 90px;
+$grid-base-4x: 120px;
+$grid-base-5x: 150px;
+$grid-base-10x: 300px;
+
+$z-index-bg: 0;
+$z-index-small: 10;
+$z-index-medium: 50;
+$z-index-large: 100;
+
+$transition-time: 0.2s;
+$transition-time-normal: 0.4s;
+$transition-time-long: 1s;
+
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 800;
+
+$border-small: 1px;
+$border-base: 2px;
+$border-bold: 4px;
+
+$font-size-h1: 60px;
+$font-size-h1-mobile: 40px;
+$font-size-h2: 30px;
+$font-size-normal: 19px;
+$font-size-small: 15px;
+$font-size-tiny: 12px;
+
+$line-height-large: 60px;
+$line-height-medium: 45px;
+$line-height-normal: 30px;
+
+$radius-medium: 20px;
+
+$angle-background-x: 36deg;
+$angle-background-y: -8.3deg;
+
+$main-container-max-width: 1260px;
+
+// breakpoints
+$bp-small: 576px;
+$bp-large: 992px;
+$bp-header-collapse: 1187px;
+$bp-full: 1903px;
