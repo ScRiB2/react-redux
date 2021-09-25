@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button'
 import styles from './PostsForm.module.scss'
+import { useAppDispatch } from '../../redux/hooks'
+import { createPost } from '../../redux/reducers/postsReducer'
 
-interface IProps {}
-
-const PostForm: React.FC<IProps> = (props) => {
+const PostForm = () => {
+  const dispatch = useAppDispatch()
   const [title, setTitle] = useState('')
 
   const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(title)
     const newPost = { title, id: Date.now().toString() }
+    dispatch(createPost(newPost))
     setTitle('')
   }
 

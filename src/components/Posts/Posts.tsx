@@ -1,11 +1,11 @@
 import React from 'react'
 import Post from '../Post/Post'
+import { useAppSelector } from '../../redux/hooks'
+import { selectSyncPosts } from '../../redux/reducers/postsReducer'
 
-interface IProps {
-  posts: number[]
-}
+export default () => {
+  const posts = useAppSelector(selectSyncPosts)
 
-export default ({ posts }: IProps) => {
   if (!posts.length) {
     return <p className="text--small">Posts not found</p>
   }
@@ -13,7 +13,7 @@ export default ({ posts }: IProps) => {
   return (
     <>
       {posts.map((post) => (
-        <Post key={post} />
+        <Post key={post.id} post={post} />
       ))}
     </>
   )

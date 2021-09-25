@@ -1,20 +1,15 @@
 import React from 'react'
 import styles from './Post.module.scss'
-
-interface IPost {
-  title: string
-}
+import { IPost } from '../../interfaces/post'
 
 interface IProps {
   post: IPost
 }
 
-export default () => {
-  return (
-    <div className={styles.post}>
-      <div className={styles.postBody}>
-        <h3>Title</h3>
-      </div>
+export default ({ post }: IProps) => (
+  <div className={styles.post}>
+    <div className={styles.postBody}>
+      <h3>{post.title}</h3>
     </div>
-  )
-}
+  </div>
+)

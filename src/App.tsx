@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './App.module.scss'
-import Button from './components/Button/Button'
 import PostForm from './components/PostForm/PostsForm'
 import Posts from './components/Posts/Posts'
 import FetchedPosts from './components/FetchedPosts/FetchedPosts'
@@ -14,11 +13,11 @@ function App() {
       </div>
       <div>
         <h2>Sync Posts</h2>
-        <Posts posts={[]} />
+        <Posts />
       </div>
       <div>
         <h2>Async Posts</h2>
-        <FetchedPosts posts={[]} />
+        <FetchedPosts />
       </div>
     </div>
   )
