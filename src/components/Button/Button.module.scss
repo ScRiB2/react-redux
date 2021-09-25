@@ -1,0 +1,48 @@
+@import 'src/styles/constants';
+@import 'src/styles/_mixins';
+
+@mixin hover($color) {
+  @include transitionHover(background-color, $color);
+
+  &:disabled {
+    background-color: $color-black-200;
+    cursor: not-allowed;
+  }
+}
+
+.button {
+  padding: $grid-tiny $grid-small;
+  color: $color-white;
+  border: none;
+  border-radius: $grid-tiny;
+  cursor: pointer;
+  outline: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.orange {
+  background-color: $color-orange;
+
+  &:focus,
+  &:active {
+    background-color: $color-orange-pressed;
+  }
+
+  @include hover($color-orange-hover);
+}
+
+.green {
+  background-color: $color-green;
+  color: $color-black-text;
+
+  &:focus,
+  &:active {
+    background-color: $color-green-pressed;
+  }
+
+  @include hover($color-green-hover);
+}

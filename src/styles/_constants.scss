@@ -1,0 +1,40 @@
+// colors
+$color-sandy: #f7a627;
+$color-orange: #f58529;
+$color-green: #00c993;
+
+$color-black-text: #313131;
+$color-black-bg: #353535;
+$color-white: #ffffff;
+
+$color-black-200: rgba($color-black-bg, 0.15);
+
+$color-green-hover: #00bb89;
+$color-green-pressed: #00ad7e;
+$color-orange-hover: #e97d27;
+$color-orange-pressed: #dc7425;
+
+// grid
+$grid-tiny: 5px;
+$grid-small: 15px;
+$grid-base: 30px;
+$grid-base-2x: 60px;
+
+$transition-time: 0.2s;
+
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 800;
+
+$font-size-h1: 60px;
+$font-size-h1-mobile: 40px;
+$font-size-h2: 30px;
+$font-size-normal: 19px;
+$font-size-small: 15px;
+$font-size-tiny: 12px;
+
+$line-height-large: 60px;
+$line-height-medium: 45px;
+$line-height-normal: 30px;
+
+$main-container-max-width: 1260px;

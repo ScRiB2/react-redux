@@ -1,0 +1,21 @@
+@import 'src/styles/constants';
+
+.post {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid $color-black-text;
+  border-radius: $grid-tiny;
+  margin-bottom: $grid-small;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-body {
+    padding: $grid-small;
+  }
+
+  &-title {
+  }
+}

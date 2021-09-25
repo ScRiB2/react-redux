@@ -1,0 +1,12 @@
+@import 'src/styles/constants';
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: $grid-base;
+  grid-column-gap: $grid-base;
+
+  .form {
+    grid-column: span 2;
+  }
+}

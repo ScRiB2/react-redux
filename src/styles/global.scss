@@ -1,0 +1,55 @@
+@import-normalize;
+@import 'constants';
+@import 'mixins';
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+p,
+ul,
+ol {
+  margin: 0;
+  @include _textNormal;
+}
+
+h1 {
+  @include _h1();
+}
+
+h2 {
+  @include _h2;
+}
+
+h3 {
+  @include _h3;
+}
+
+.text {
+  &--normal {
+    @include _textNormal;
+  }
+
+  &--small {
+    @include _textSmall;
+  }
+
+  &--label {
+    @include _textLabel;
+  }
+
+  &--button {
+    @include _textButton;
+  }
+}
+
+.main-container {
+  max-width: $main-container-max-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 $grid-base;
+}
