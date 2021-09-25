@@ -14,6 +14,7 @@
   padding: $grid-tiny $grid-small;
   color: $color-white;
   border: none;
+  border-radius: $grid-tiny;
   cursor: pointer;
   outline: none;
   &:focus,

@@ -1,0 +1,22 @@
+@import 'src/styles/constants';
+
+.form {
+  margin-top: $grid-small;
+
+  .label {
+    display: inline-block;
+    margin-bottom: $grid-tiny;
+  }
+
+  .input {
+    display: block;
+    width: 100%;
+    padding: 2 * $grid-tiny $grid-small;
+    font-size: $font-size-normal;
+    font-weight: normal;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: $grid-tiny;
+    margin-bottom: $grid-small;
+  }
+}
